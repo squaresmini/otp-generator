@@ -1,0 +1,32 @@
+<configuration>
+<!-- 
+	<appender name="OTPGEN-FILE"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>log/otpgen.log</file>
+		<encoder
+			class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>%date{"yyyy-MM-dd'T'HH:mm:ss.SSSZ"} %level [%thread] %logger - %msg%n</Pattern>
+		</encoder>
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>log/otpgen-%d{yyyyMMdd}.log</fileNamePattern>
+			<maxHistory>3</maxHistory>
+		</rollingPolicy>
+	</appender>
+ -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+	    	 <pattern>%date{"yyyy-MM-dd'T'HH:mm:ss.SSSZ"} %level [%thread] %logger - %msg%n</pattern>
+	   	</encoder>
+	</appender>
+<!--  
+	<logger name="otpGeneration.algorithm" additivity="false" level="DEBUG">
+		<appender-ref ref="OTPGEN-FILE" />
+	</logger>
+-->
+
+	<root level="DEBUG">
+		<!-- <appender-ref ref="OTPGEN-FILE" /> -->
+		<appender-ref ref="STDOUT" />
+	</root>
+</configuration>
