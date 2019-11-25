@@ -1,4 +1,4 @@
-package otpGeneration.algorithms;
+package com.quare.otpgenerator.algorithms;
 
 public enum HashAlgorithm {
 

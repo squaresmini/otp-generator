@@ -1,9 +1,9 @@
-package otpGeneration.algorithms;
+package com.quare.otpgenerator.algorithms;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import otpGeneration.algorithms.exceptions.OtpGenerationException;
+import com.quare.otpgenerator.algorithms.exceptions.OtpGenerationException;
 
 public class Totp extends Hotp{
 	

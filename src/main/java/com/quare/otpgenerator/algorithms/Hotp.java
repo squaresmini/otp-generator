@@ -1,4 +1,4 @@
-package otpGeneration.algorithms;
+package com.quare.otpgenerator.algorithms;
 
 import java.nio.charset.Charset;
 
@@ -8,9 +8,9 @@ import org.slf4j.LoggerFactory;
 import com.google.common.hash.HashFunction;
 import com.google.common.hash.Hasher;
 import com.google.common.hash.Hashing;
+import com.quare.otpgenerator.algorithms.exceptions.OtpGenerationException;
 
 import ch.qos.logback.core.encoder.ByteArrayUtil;
-import otpGeneration.algorithms.exceptions.OtpGenerationException;
 
 public class Hotp{
 	
