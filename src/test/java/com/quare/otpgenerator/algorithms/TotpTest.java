@@ -1,4 +1,4 @@
-package otpGeneration.algorithm;
+package com.quare.otpgenerator.algorithms;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
@@ -9,13 +9,12 @@ import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.quare.otpgenerator.algorithms.HashAlgorithm;
+import com.quare.otpgenerator.algorithms.Totp;
+import com.quare.otpgenerator.algorithms.exceptions.OtpGenerationException;
 import com.tngtech.java.junit.dataprovider.DataProvider;
 import com.tngtech.java.junit.dataprovider.DataProviderRunner;
 import com.tngtech.java.junit.dataprovider.UseDataProvider;
-
-import otpGeneration.algorithms.HashAlgorithm;
-import otpGeneration.algorithms.Totp;
-import otpGeneration.algorithms.exceptions.OtpGenerationException;
 
 @RunWith(DataProviderRunner.class)
 public class TotpTest {

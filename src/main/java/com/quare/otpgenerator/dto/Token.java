@@ -1,4 +1,4 @@
-package otpGeneration.dto;
+package com.quare.otpgenerator.dto;
 
 public class Token {
 

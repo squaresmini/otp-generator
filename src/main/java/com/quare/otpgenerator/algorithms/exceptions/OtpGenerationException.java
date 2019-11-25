@@ -1,4 +1,4 @@
-package otpGeneration.algorithms.exceptions;
+package com.quare.otpgenerator.algorithms.exceptions;
 
 public class OtpGenerationException extends Exception{
 
